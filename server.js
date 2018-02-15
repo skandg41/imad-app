@@ -14,7 +14,7 @@ app.get('/page-one/',function(req,res){
 });
 
 app.get('/page-two/',function(req,res){
-    res.show("Page two will be showed");
+    res.print("Page two will be showed");
 });
 
 app.get('/ui/style.css', function (req, res) {
