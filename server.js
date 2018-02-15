@@ -9,6 +9,14 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/page-one/',function(req,res){
+    res.show("Page one will be showed");
+});
+
+app.get('/page-two/',function(req,res){
+    res.show("Page two will be showed");
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
