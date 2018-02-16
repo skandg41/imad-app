@@ -10,11 +10,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/page-one/',function(req,res){
-    res.show("Page one will be showed");
+    res.send("Page one will be showed");
 });
 
 app.get('/page-two/',function(req,res){
-    res.print("Page two will be showed");
+    res.send("Page two will be showed");
 });
 
 app.get('/ui/style.css', function (req, res) {
