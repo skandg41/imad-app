@@ -7,4 +7,4 @@ button.onClick =function(){
     var span=document.getElementById("count");
     span.innerHTML=counter.toString();
     
-}
+};
