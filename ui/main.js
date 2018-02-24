@@ -2,7 +2,7 @@
 var button=get.ElementById("counter");
 
 button.onclick =function(){
-    
+//Create a request object    
     var request =new XMLHttpRequest();
     
     request.onreadyststechange=function(){
@@ -15,7 +15,10 @@ button.onclick =function(){
             }
         }
         
-    }
+    };
+    
+    request.open("GET","http://skandg41.imad.hasura-app.io/counter",true);
+    request.send(null);
     
     
 };
