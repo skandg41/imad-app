@@ -1,5 +1,5 @@
 //Counter Code
-var button=get.ElementById('counter');
+var button=get.ElementById("counter");
 button.onClick =function(){
     
     
