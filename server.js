@@ -21,9 +21,10 @@ app.get('/', function (req, res) {
 
 
 
-var pool = new Pool(config);
+
 app.get('/test-db',function(req,res){
    
+   var pool = new Pool(config);
    pool.query('SELECT * from table',function(err, result){
   
   if(err)
@@ -40,6 +41,8 @@ app.get('/test-db',function(req,res){
        
    });
 });
+
+
 var counter=0;
 app.get('/counter',function(req,res){
     counter =counter+1;
