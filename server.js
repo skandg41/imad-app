@@ -32,9 +32,9 @@ app.get('/test-db',function(req,res){
   {
       res.send(JSON.stringify(result.rows));
   }
-  console.log(err, res)
+  /*console.log(err, res)
   pool.end()
-
+*/
        
    });
 });
